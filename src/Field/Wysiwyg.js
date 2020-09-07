@@ -1,6 +1,7 @@
+/* eslint-disable */
 import _ from 'lodash';
 import React, { useState } from 'react';
-import ReactQuill from 'react-quill';
+// import ReactQuill from 'react-quill';
 // import 'react-quill/dist/quill.snow.css';
 import { changeHandler, setFieldValueWrapper } from '../utils';
 
@@ -17,7 +18,9 @@ const Wysiwyg = ({ config, formik, value = '', error }) => {
     } = config;
     const { setFieldValue, handleChange, handleBlur } = formik;
     const toolbarOptions = _.assign({}, options ? options : Wysiwyg.defaultOptions);
-
+    if(document){
+        const ReactQuill = require('react-quill');
+    }
     return (
         <div className={`row ql-container-wysiwyg ql-container-wysiwyg-${name}` }>
             <div className="col-md-12 d-flex justify-content-end">

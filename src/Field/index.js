@@ -9,18 +9,19 @@ import Textarea from './Textarea';
 import Checkbox from './Checkbox';
 import InnerText from './InnerText';
 import CodeEditor from './CodeEditor';
+import IconButton from './IconButton';
 import ReactSelect from './ReactSelect';
 import FileUploader from './FileUploader';
 import Autocomplete from './Autocomplete';
 
 [
-    'text',
-    'email',
-    'password',
-    'number',
-    'url',
-    'date'
-].map(( type ) => registerField(type, Text));
+  'text',
+  'email',
+  'password',
+  'number',
+  'url',
+  'date',
+].map((type) => registerField(type, Text));
 
 registerField('radio', Radio);
 registerField('button', Button);
@@ -30,6 +31,7 @@ registerField('textarea', Textarea);
 registerField('checkbox', Checkbox);
 registerField('inner-text', InnerText);
 registerField('code-editor', CodeEditor);
+registerField('icon-button', IconButton);
 registerField('react-select', ReactSelect);
 registerField('autocomplete', Autocomplete);
 registerField('file-uploader', FileUploader);

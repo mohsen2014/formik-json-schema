@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconButton = ({ config, formik }) => {
+const Button = ({ config, formik }) => {
   const {
     content, fieldClass, buttonType, onClick,
   } = config;
@@ -25,4 +25,4 @@ const IconButton = ({ config, formik }) => {
   );
 };
 
-export default IconButton;
+export default Button;
